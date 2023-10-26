@@ -1,10 +1,10 @@
 - hosts: all
   tasks:
-     - name: stop contaier
-       shell: docker stop dockeransible
-     - name: remove contaier
-       shell: docker rm dockeransible
-     - name: docker image removal
-       shell: docker image rm -f oalalif/pipeline-demo2
+    #  - name: stop contaier
+    #    shell: docker stop dockeransible
+    #  - name: remove contaier
+    #    shell: docker rm dockeransible
+    #  - name: docker image removal
+    #    shell: docker image rm -f oalalif/pipeline-demo2
      - name: create new container
        shell: docker run -itd --name dockeransible -p 9000:80 oalalif/pipeline-demo2
