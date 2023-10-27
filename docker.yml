@@ -7,4 +7,4 @@
     - name: remove docker image
       shell: docker image rm oalalif/demo-2
     - name: create new container
-      shell: docker container run -itd --name demo-container -p 9000:80 oalalif/demo-2
+      shell: docker container run -itd --name demo-container -p 80:5000 oalalif/demo-2

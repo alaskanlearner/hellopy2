@@ -10,6 +10,9 @@ COPY hello.py /app/hello.py
 # Menetapkan direktori kerja
 WORKDIR /app
 
+# Menginstal Flask (bisa juga menggunakan pipenv atau requirements.txt)
+RUN pip install Flask
+
 # Menjalankan aplikasi Python ketika container dijalankan
 CMD ["python", "hello.py"]
 
@@ -23,4 +26,4 @@ CMD ["python", "hello.py"]
 # RUN cp -rvf photogenic/* .
 # RUN rm -rf photogenic photogenic.zip
 # CMD [ "/usr/sbin/httpd","-D","FOREGROUND" ]
-EXPOSE 80
+# EXPOSE 80

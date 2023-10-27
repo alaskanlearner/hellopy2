@@ -7,4 +7,4 @@
      - name: docker image removal
        shell: docker image rm -f oalalif/pipeline-demo2
      - name: create new container
-       shell: docker run -itd --name dockeransible -p 9000:80 oalalif/pipeline-demo2
+       shell: docker run -itd --name dockeransible -p 80:5000 oalalif/pipeline-demo2
